@@ -15,11 +15,11 @@ class Divisiontest < Minitest::Test
 	#end
 
 	def test_10_div_0_is_bad
-		assert_nil(nil, division(10,0))
+		assert_equal("can't do that, divide by something else.", division(10,0))
 	end
 
 	def test_100_div_10_is10
-		assert_equal(10, division(100,10))
+		assert_equal(0, division(0,10))
 	end
 
 	def test_20_div_2_is_10
